@@ -15,7 +15,7 @@
                 'Redesigned legacy systems from the ground up, to enhance usability and code quality and reduce the need for manual work during critical periods.',
                 'Provded training and guidance to junior team members and performed thorough code reviews.',
                 'Deployed code to live servers, monitored logs and resolved server errors.',
-                'Stood in as application lead, coordinating scrm activities, communicating with stakeholders and resolving issues like failed API syncing.'
+                'Stood in as application lead, coordinating scrum activities, communicating with stakeholders and resolving issues like failed API syncing.'
              ]
         },
         {
