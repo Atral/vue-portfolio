@@ -1,0 +1,52 @@
+@import './base.css';
+
+#app {
+  display: flex; 
+  flex-direction: row;
+  height: 100%;
+  padding: 6rem;
+  gap: 1rem;
+  max-width: 1280px;
+
+  h1, h2, h3 {
+    color: var(--header-text);
+  }
+
+  h1 {
+    font-size: 3rem;
+    letter-spacing: -0.02rem
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    letter-spacing: 0.02rem;
+  }
+
+  h3  {
+    font-size: 1rem;
+  }
+
+  .active-nav-link {
+    color: var(--header-text);
+    transition: color 0.2s ease-in-out;
+  }
+
+  .section-title {
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      visibility: hidden;
+  }
+
+}
+
+@media only screen and (max-width: 1280px) {
+  #app {
+    flex-direction: column;
+    gap: 6rem;
+    padding: 3rem;
+  }
+
+  .section-title {
+    visibility: visible !important;
+  }
+}
