@@ -1,6 +1,6 @@
 # vue-portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Portfolio coded from scratch in Visual Studio Code. Built using Vue.js and Vite and deployed to https://jackmaskell.com with Vercel.
 
 ## Recommended IDE Setup
 
