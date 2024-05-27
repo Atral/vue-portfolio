@@ -27,9 +27,9 @@ const stats = [
 <style scoped>
     #stats-container {
         display: grid;
-        grid-template-columns: 33% 31% 31%;
+        grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
         gap: 1rem;
-
+        
         .card {
             width: auto;
             background-color: rgba(57, 53, 94, 0.226);
