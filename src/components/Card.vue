@@ -37,6 +37,13 @@
             box-shadow: none;
             pointer-events: none;
         }
+
+        .card:hover {
+            background-color: transparent;
+            border: none;
+            backdrop-filter: none;
+            pointer-events: none;
+        }
     }
 
 </style>

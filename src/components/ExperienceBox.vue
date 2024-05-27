@@ -136,5 +136,9 @@ onMounted(() => {
         .experience-box {
             padding: 0;
         }
+
+        .experience-box.dimmed {
+            opacity: unset;
+        }
     }
 </style>

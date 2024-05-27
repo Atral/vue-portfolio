@@ -102,5 +102,9 @@ import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
             padding: 0;
             pointer-events: none;
         }
+
+        .project.dimmed {
+            opacity: unset;
+        }
     }
 </style>
