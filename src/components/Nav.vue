@@ -47,7 +47,7 @@
             </div>
             <div class="icons">
                 <a href="https://github.com/Atral" target="_blank"><FontAwesomeIcon :icon="faGithub" /></a>
-                <a href="https://www.linkedin.com/in/jack-maskell-282176196/" target="_blank"><FontAwesomeIcon :icon="faLinkedin" /></a>
+                <a href="https://www.linkedin.com/in/jack-maskell/" target="_blank"><FontAwesomeIcon :icon="faLinkedin" /></a>
                 <a href="https://github.com/Atral/vue-portfolio" target="_blank"><FontAwesomeIcon :icon="faCode" /></a>
                 <a href="https://drive.google.com/uc?export=download&id=1AcN_obt8GwhwrklD_ax3LQTqU4tGnkFM" download="jack-maskell-cv.pdf"><FontAwesomeIcon :icon="faFilePdf" /></a>
             </div>
