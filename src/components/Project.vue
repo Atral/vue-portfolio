@@ -2,6 +2,7 @@
 import { onMounted } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import Quotes from '@/components/Quotes.vue'
 
     const props = defineProps({
         project: {
@@ -36,6 +37,7 @@ import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
         <div class="content">
             <div class="title"><a :href="project.link" target="_blank">{{ project.name }} <FontAwesomeIcon :icon="faUpRightFromSquare" /></a></div>
             <div class="description">{{ project.description }}</div>
+            <Quotes :quotes="project?.quotes" v-if="project.quotes"/>
         </div>
     </div>
 </template>

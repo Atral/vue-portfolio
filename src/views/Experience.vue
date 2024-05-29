@@ -11,15 +11,15 @@
             endDate: 'Present',
             technologies: ['Vue.js', 'Vuetify', 'JavaScript', 'Node.js', 'MySQL', 'Git', 'HTML & CSS', 'Laravel',],
             description: [
-                'Designed and implemented new systems across the whole stack for the company\'s CRM software.',
-                'Redesigned legacy systems from the ground up, to enhance usability and code quality and reduce the need for manual work during critical periods.',
+                'Designed and implemented new systems across the entire  stack for the company\'s CRM software.',
+                'Redesigned legacy systems from the ground up to enhance usability and code quality, as well as reduce the need for manual work during critical periods.',
                 'Provided training and guidance to junior team members and performed thorough code reviews.',
-                'Deployed code to live servers, monitored logs and resolved server errors.',
-                'Stood in as application lead, coordinating scrum activities, communicating with stakeholders and resolving issues like failed API syncing.'
+                'Deployed code to live servers, monitored logs, and resolved server errors.',
+                'Stood in as application lead, coordinating scrum activities, communicating with stakeholders, and resolving issues like failed API syncing.'
              ]
         },
         {
-            title: 'BSc (Hons) Artifical Intelligence and Computer Science, 1st Class',
+            title: 'BSC (HONS) ARTIFICIAL INTELLIGENCE AND COMPUTER SCIENCE, 1ST CLASS — UNIVERSITY OF SHEFFIELD',
             company: 'University of Sheffield',
             link: 'https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-bsc',
             startDate: '2018',
@@ -40,9 +40,9 @@
             technologies: ['Python'],
             description: [
                 'Learned how to use Python in a scientific setting.',
-                'Honed skills in advanced mathematics such as Fourier techniques and partial differential equations and quantum mechanics.',
-                'Learned about physics behind medical imaging technology and how electromagnetic radiation is used in radiography, CT and MRI.',
-                'Found out why aliens haven\'t visted us yet.'
+                'Honed skills in advanced mathematics such as Fourier techniques, partial differential equations, and quantum mechanics.',
+                'Learned about the physics behind medical imaging technology and how electromagnetic radiation is used in radiography, CT, and MRI.',
+                'Found out why aliens haven\'t visited us yet.'
              ]
         }
     ]
