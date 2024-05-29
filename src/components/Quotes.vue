@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <v-carousel cycle="3s" :show-arrows="false" hide-delimiters height="3rem">
+    <v-carousel cycle="3s" :show-arrows="false" hide-delimiters height="4rem">
         <v-carousel-item v-for="(quote, i) in quotes" :key="i" reverse-transition="fade-transition" transition="fade-transition">
             <div class="quote-container">
                "{{ quote.quote }}"<br/>
@@ -29,7 +29,7 @@
     .author {
         font-size: 0.8rem;
         color: var(--header-text);
-        margin-left: 1rem;
+        margin-left: 0.5rem;
     }
  }
 </style>
