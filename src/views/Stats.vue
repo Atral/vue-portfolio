@@ -8,7 +8,7 @@ const stats = [
     { label: 'Bugs Squashed', amount: 53 },
     { label: 'Major Projects', amount: 7 },
     { label: 'Code Reviews', amount: 401 },
-    { label: 'Countries Visited', amount: 6 },
+    { label: 'Major Redesigns', amount: 3 },
 ]
 
 </script>
