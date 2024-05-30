@@ -1,15 +1,12 @@
 <script setup>
-    import { onMounted } from 'vue';
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-    import { faCode } from '@fortawesome/free-solid-svg-icons'
-    import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
-    import { faGithub } from '@fortawesome/free-brands-svg-icons'
-    import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { onMounted } from 'vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCode, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-    let currentSection = 'about';
+let currentSection = 'about';
 
-    
-    onMounted(() => {
+onMounted(() => {
     const navLinkEls = document.querySelectorAll('.nav-link');
     const sectionEls = document.querySelectorAll('.section');
 
@@ -27,7 +24,7 @@
         }
 
         navLinkEls.forEach(navLinkEl => {
-            if (navLinkEl.getAttribute('href').includes(currentSection)) {
+            if (navLinkEl.getAttribute('data-target') === currentSection) {
                 navLinkEl.classList.add('active-nav-link');
             } else {
                 navLinkEl.classList.remove('active-nav-link');
@@ -38,7 +35,7 @@
 
 const scrollToPosition = (e) => {
     e.preventDefault();
-    const targetId = e.target.getAttribute('href').substring(1);
+    const targetId = e.target.getAttribute('data-target');
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
         window.scrollTo({
@@ -56,13 +53,11 @@ const scrollToPosition = (e) => {
             <h2 class="sub-heading">Full-Stack Software Engineer</h2>
             <div class="main-text">I build clean, scalable web applications in JavaScript.</div>
             <div class="links">
-                <ul>
-                    <li><a class="nav-link active-nav-link" href="#about" @click="scrollToPosition">About</a></li>
-                    <li><a class="nav-link" href="#experience" @click="scrollToPosition">Experience</a></li>
-                    <li><a class="nav-link" href="#stats" @click="scrollToPosition">Stats</a></li>
-                    <li><a class="nav-link" href="#projects" @click="scrollToPosition">Projects</a></li>
-                    <li><a class="nav-link" href="#contact" @click="scrollToPosition">Contact</a></li>
-                </ul>
+                <div class="nav-link active-nav-link" data-target="about" @click="scrollToPosition">About</div>
+                <div class="nav-link" data-target="experience" @click="scrollToPosition">Experience</div>
+                <div class="nav-link" data-target="stats" @click="scrollToPosition">Stats</div>
+                <div class="nav-link" data-target="projects" @click="scrollToPosition">Projects</div>
+                <div class="nav-link" data-target="contact" @click="scrollToPosition">Contact</div>
             </div>
             <div class="icons">
                 <a href="https://github.com/Atral" target="_blank"><FontAwesomeIcon :icon="faGithub" /></a>
@@ -83,31 +78,31 @@ const scrollToPosition = (e) => {
             width: 52%;
         }
 
-        .container { position: fixed;}
+        .container {
+            position: fixed;
+        }
 
         .links {
             margin-top: 4rem;
-            ul {
-                padding-left: 0;
-                li { 
-                    list-style-type: none;
-                    padding-top: 12px;
-                    padding-bottom: 12px;
-                    padding-left: 0;
-                    text-transform: uppercase;
-                    font-size: .8rem;
-                    font-weight: bold;
-                    letter-spacing: 0.15rem;
-                    cursor: pointer;
-                }
 
-                li:hover {
-                    color: var(--header-text);
-                    transition: var(--text-hover-transition);
-                }
+            .nav-link {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-transform: uppercase;
+                font-size: .8rem;
+                font-weight: bold;
+                letter-spacing: 0.15rem;
+                cursor: pointer;
+                display: block;
+                height: 48px;
+            }
+
+            .nav-link:hover {
+                color: var(--header-text);
+                transition: var(--text-hover-transition);
             }
         }
-        
+
         .icons {
             display: flex;
             gap: 1.5rem;
@@ -130,10 +125,12 @@ const scrollToPosition = (e) => {
         .navbar {
             width: 100%;
             position: relative;
+
             .container {
                 position: relative;
             }
-            .links { 
+
+            .links {
                 display: none;
             }
 
@@ -148,6 +145,4 @@ const scrollToPosition = (e) => {
             }
         }
     }
-
-
 </style>

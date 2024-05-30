@@ -14,9 +14,9 @@ const stats = [
 </script>
 
 <template>
-    <div id="stats">
+    <div class="section" id="stats">
         <h2 class="section-title">Stats</h2>
-        <div class="section" id="stats-container">
+        <div id="stats-container">
             <Card v-for="stat in stats">
                 <Stat :stat="stat"/>
             </Card>
