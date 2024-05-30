@@ -10,24 +10,44 @@
 
     
     onMounted(() => {
-        const navLinkEls = document.querySelectorAll('.nav-link');
-        const sectionEls = document.querySelectorAll('.section');
+    const navLinkEls = document.querySelectorAll('.nav-link');
+    const sectionEls = document.querySelectorAll('.section');
 
-        window.addEventListener('scroll', () => {
-            const bottomVisible = document.documentElement.clientHeight + window.scrollY >= (document.documentElement.scrollHeight || document.documentElement.clientHeight);
+    window.addEventListener('scroll', () => {
+        const bottomVisible = document.documentElement.clientHeight + window.scrollY >= (document.documentElement.scrollHeight || document.documentElement.clientHeight);
 
-            sectionEls.forEach(sectionEl => {
-                if (window.scrollY + (14 * parseFloat(getComputedStyle(document.documentElement).fontSize)) >= sectionEl.offsetTop) currentSection = sectionEl.id;
-            });
-            
-            if(bottomVisible) currentSection = 'contact';
-
-            navLinkEls.forEach(navLinkEl => {
-                if (navLinkEl.href.includes(currentSection)) navLinkEl.classList.add('active-nav-link');
-                else navLinkEl.classList.remove('active-nav-link');
-            });
+        sectionEls.forEach(sectionEl => {
+            if (window.scrollY + (14 * parseFloat(getComputedStyle(document.documentElement).fontSize)) >= sectionEl.offsetTop) {
+                currentSection = sectionEl.id;
+            }
         });
-    })
+        
+        if (bottomVisible) {
+            currentSection = 'contact';
+        }
+
+        navLinkEls.forEach(navLinkEl => {
+            if (navLinkEl.getAttribute('href').includes(currentSection)) {
+                navLinkEl.classList.add('active-nav-link');
+            } else {
+                navLinkEl.classList.remove('active-nav-link');
+            }
+        });
+    });
+});
+
+const scrollToPosition = (e) => {
+    console.log('nav link clicked', e.target.getAttribute('href').substring(1))
+    e.preventDefault();
+    const targetId = e.target.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+};
 </script>
 
 <template>
@@ -38,11 +58,11 @@
             <div class="main-text">I build clean, scalable web applications in JavaScript.</div>
             <div class="links">
                 <ul>
-                    <li><a class="nav-link active-nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#experience">Experience</a></li>
-                    <li><a class="nav-link" href="#stats">Stats</a></li>
-                    <li><a class="nav-link" href="#projects">Projects</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link active-nav-link" href="#about" @click="scrollToPosition">About</a></li>
+                    <li><a class="nav-link" href="#experience" @click="scrollToPosition">Experience</a></li>
+                    <li><a class="nav-link" href="#stats" @click="scrollToPosition">Stats</a></li>
+                    <li><a class="nav-link" href="#projects" @click="scrollToPosition">Projects</a></li>
+                    <li><a class="nav-link" href="#contact" @click="scrollToPosition">Contact</a></li>
                 </ul>
             </div>
             <div class="icons">
