@@ -37,7 +37,6 @@
 });
 
 const scrollToPosition = (e) => {
-    console.log('nav link clicked', e.target.getAttribute('href').substring(1))
     e.preventDefault();
     const targetId = e.target.getAttribute('href').substring(1);
     const targetElement = document.getElementById(targetId);
