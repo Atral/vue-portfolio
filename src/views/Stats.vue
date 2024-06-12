@@ -29,7 +29,7 @@ const stats = [
         display: grid;
         grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
         gap: 1rem;
-        
+
         .card {
             width: auto;
             background-color: rgba(57, 53, 94, 0.226);
@@ -43,6 +43,12 @@ const stats = [
         .card:hover {
             background-color: rgba(79, 75, 117, 0.226);
             transition: background-color 0.2s linear;
+        }
+    }
+    
+    @media only screen and (max-width: 700px) {
+        #stats-container {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         }
     }
 </style>
