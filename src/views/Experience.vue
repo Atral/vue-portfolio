@@ -36,7 +36,7 @@
             description: [
                 'Led teams in multiple software engineering projects from requirements elicitation through to delivery.',
                 'Won the Engineers in Business competition by pitching a swarm robotics solution for precision agriculture.',
-                'Wrote my disseration on AI grammar correction in Python.'
+                'Wrote my dissertation on AI grammar correction in Python.'
              ]
         },
         {
