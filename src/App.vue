@@ -17,7 +17,7 @@ import Spotlight from './components/Spotlight.vue'
   <div class="content">
     <HomeView />
     <Experience />
-    <Stats />
+    <!-- <Stats /> -->
     <Projects />
     <Contact />
     <Footer />
