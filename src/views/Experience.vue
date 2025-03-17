@@ -20,7 +20,7 @@
             description: [
                 'Designed and implemented new full-stack systems for the company\'s CRM software, including UI design and implementation, backend and database design.',
                 'Created and documented a number of reusable UI components, including a date range selector, comment section and uploader component.',
-                'Redesigned legacy systems from the ground up to enhance usability and code quality, as well as reduce the need for manual work during critical periods. For example, I rebuilt our contract amendments system to create a significantly improvement user experience and allow more flexibility.',
+                'Redesigned legacy systems from the ground up to enhance usability and code quality, as well as reduce the need for manual work during critical periods. For example, I rebuilt our contract amendments system to signifcantly improve user experience and allow more flexibility.',
                 'Provided training, guidance and onboarding to junior team members and performed thorough code reviews.',
                 'Deployed code to live servers, monitored logs, and resolved server errors.',
                 'Stood in as application lead, coordinating scrum activities, communicating with stakeholders, and resolving issues like failed API syncing.'
@@ -36,7 +36,7 @@
             description: [
                 'Led teams in multiple software engineering projects from requirements elicitation through to delivery.',
                 'Won the Engineers in Business competition by pitching a swarm robotics solution for precision agriculture.',
-                'Wrote my disseration on AI grammar correction in Python.'
+                'Wrote my dissertation on AI grammar correction in Python.'
              ]
         },
         {
