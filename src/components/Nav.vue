@@ -55,7 +55,7 @@ const scrollToPosition = (e) => {
             <div class="links">
                 <div class="nav-link active-nav-link" data-target="about" @click="scrollToPosition">About</div>
                 <div class="nav-link" data-target="experience" @click="scrollToPosition">Experience</div>
-                <div class="nav-link" data-target="stats" @click="scrollToPosition">Stats</div>
+                <!-- <div class="nav-link" data-target="stats" @click="scrollToPosition">Stats</div> -->
                 <div class="nav-link" data-target="projects" @click="scrollToPosition">Projects</div>
                 <div class="nav-link" data-target="contact" @click="scrollToPosition">Contact</div>
             </div>
