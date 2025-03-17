@@ -4,16 +4,24 @@
     
     const experiences = [
         {
+            title: 'Specialist Software Engineer',
+            company: 'Darktrace',
+            link: 'https://darktrace.com/',
+            startDate: 'MAR 2025',
+            endDate: 'PRESENT',
+        },
+        {
             title: 'Software Engineer',
             company: 'Darktrace',
             link: 'https://darktrace.com/',
-            startDate: '2021',
-            endDate: 'Present',
-            technologies: ['Vue.js', 'Vuetify', 'JavaScript', 'Node.js', 'MySQL', 'Git', 'HTML & CSS', 'Laravel',],
+            startDate: 'JUL 2021',
+            endDate: 'MAR 2025',
+            technologies: ['Vue.js', 'Vuetify', 'JavaScript', 'JQuery', 'Node.js', 'MySQL', 'Git', 'HTML & CSS', 'Laravel',],
             description: [
-                'Designed and implemented new systems across the entire  stack for the company\'s CRM software.',
-                'Redesigned legacy systems from the ground up to enhance usability and code quality, as well as reduce the need for manual work during critical periods.',
-                'Provided training and guidance to junior team members and performed thorough code reviews.',
+                'Designed and implemented new full-stack systems for the company\'s CRM software, including UI design and implementation, backend and database design.',
+                'Created and documented a number of reusable UI components, including a date range selector, comment section and uploader component.',
+                'Redesigned legacy systems from the ground up to enhance usability and code quality, as well as reduce the need for manual work during critical periods. For example, I rebuilt our contract amendments system to create a significantly improvement user experience and allow more flexibility.',
+                'Provided training, guidance and onboarding to junior team members and performed thorough code reviews.',
                 'Deployed code to live servers, monitored logs, and resolved server errors.',
                 'Stood in as application lead, coordinating scrum activities, communicating with stakeholders, and resolving issues like failed API syncing.'
              ]
