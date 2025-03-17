@@ -27,7 +27,7 @@
              ]
         },
         {
-            title: 'BSC (HONS) ARTIFICIAL INTELLIGENCE AND COMPUTER SCIENCE, 1ST CLASS — UNIVERSITY OF SHEFFIELD',
+            title: 'BSC (HONS) ARTIFICIAL INTELLIGENCE AND COMPUTER SCIENCE, 1ST CLASS',
             company: 'University of Sheffield',
             link: 'https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-bsc',
             startDate: '2018',
