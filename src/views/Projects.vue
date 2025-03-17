@@ -26,7 +26,7 @@
             image: kateYangImage,
             name: 'Kate Yang',
             link: 'https://kateyang.co.uk',
-            description: 'I\'m currently building an e-commerce shop to sell traditional Chinese clothing using Vue.js, Node.js, and MySQL. Through this project I plan to learn more about cloud deployments, content delivery networks and infrastructure.'
+            description: 'I\'m running an e-commerce shop to sell traditional Chinese clothing. Through this I\'ve gained skills in photo editing, search engine optimisation, load speed optimisation and learned how to design websites to maximise conversions.' 
         },
         {   
             altText: 'Screenshot of a coin identifier website.',
