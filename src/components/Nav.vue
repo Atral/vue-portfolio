@@ -63,7 +63,7 @@ const scrollToPosition = (e) => {
                 <a href="https://github.com/Atral" target="_blank"><FontAwesomeIcon :icon="faGithub" /></a>
                 <a href="https://www.linkedin.com/in/jack-maskell/" target="_blank"><FontAwesomeIcon :icon="faLinkedin" /></a>
                 <a href="https://github.com/Atral/vue-portfolio" target="_blank"><FontAwesomeIcon :icon="faCode" /></a>
-                <a href="https://drive.google.com/uc?export=download&id=1ufg843CinuieU4zJKahbxp9mwklroREC" download="jack-maskell-cv.pdf"><FontAwesomeIcon :icon="faFilePdf" /></a>
+                <a href="https://drive.google.com/uc?export=download&id=1_DV6k7rlaNlaFNCaer-N3a7hMvo21wLC" download="jack-maskell-cv.pdf"><FontAwesomeIcon :icon="faFilePdf" /></a>
             </div>
         </div>
     </div>
