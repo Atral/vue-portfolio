@@ -12,7 +12,7 @@
             image: cfpImage,
             altText: '3 characters wearing medieval attire.',
             name: 'Community Flavor Pack',
-            link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=2220098919',
+            link: 'https://communityflavorpack.com/',
             description: `For four years, I have been part of a core team of two on Community Flavor Pack, the most popular Crusader Kings 3 mod. The project adds historically accurate and documented visual flavour to the game to enhance the experience without affecting balance or gameplay. My contributions of 2D graphics, textures, and game code have helped the mod grow to over 500,000 downloads.`,
             quotes: [
                 { id: 1, author: 'PC Gamer', quote: 'Honestly, it\'s difficult to tell this is even a mod.' },

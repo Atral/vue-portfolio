@@ -9,6 +9,11 @@
             link: 'https://darktrace.com/',
             startDate: 'MAR 2025',
             endDate: 'PRESENT',
+            description: [
+                'Took ownership of several software projects.',
+                'Managed communication with stakeholders.',
+                'Key player in aiding the transition to a third-party platform.'
+            ]
         },
         {
             title: 'Software Engineer',
